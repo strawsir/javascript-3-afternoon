@@ -35,15 +35,19 @@
 
 ////////// PROBLEM 1 //////////
 
+
 /*
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
 function showValues( obj ) {
-  //Code Here
-}
-
-
+  var strArr = []
+  for(var val in obj){
+    strArr.push(obj[val])
+    var str = strArr.join('')
+    
+    }return str;
+  }
 
 ////////// PROBLEM 2 //////////
 
@@ -53,7 +57,13 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10(obj){
+for(var number in obj){
+  if(obj[number]>10){
+    obj[number]=0;
+  }
+}return obj;
+}
 
 
 
